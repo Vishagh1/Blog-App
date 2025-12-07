@@ -1,5 +1,6 @@
 # Python
 __pycache__/
+<<<<<<< HEAD
 *.pyc
 
 # Virtual environments
@@ -15,3 +16,55 @@ db.sqlite3
 # IDE
 .idea/
 .vscode/
+=======
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Django Migrations (optional: keep if you want migrations in Git)
+*/migrations/*
+!*/migrations/__init__.py
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+djangoblogvenv/
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables
+.env
+*.env
+
+# SQLite database
+db.sqlite3
+
+# Logs
+*.log
+
+# Byte-compiled / temporary files
+*.bak
+*.swp
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Static/Media (if collected outside app)
+staticfiles/
+media/
+
+# pytest cache
+.pytest_cache/
+
+# pip
+pip-log.txt
+>>>>>>> 95a7918b4b29e5187274d5cd32e9ce3202251fe5
