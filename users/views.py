@@ -1,18 +1,23 @@
 from django.shortcuts import render, redirect
 from .form import UserRegistrationForm
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 def register(request):
     if request.method == 'POST':
-        Form =UserRegistrationForm(request.POST)
-        if Form.is_valid():
-            Form.save()
-            username = Form.cleaned_data.get('username')
+        form =UserRegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username}!')
             return redirect('blog-home')
         else:
-            print(Form.errors)
+            print(form.errors)
     else:
-        Form = UserRegistrationForm()
+        form = UserRegistrationForm()
 
-    return render(request, 'users/register.html', {'Form': Form})
+    return render(request, 'users/register.html', {'form': form})
+
+@login_required()
+def profile(request):
+    return render(request,'users/profile.html')
