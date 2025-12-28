@@ -10,6 +10,7 @@ A simple blog application built using Django as part of my backend learning jour
 - Create, update, and delete blog posts
 - View posts by a specific user
 - Pagination for blog posts
+- Email and Password reset
 - Django Admin integration
 
 ---
