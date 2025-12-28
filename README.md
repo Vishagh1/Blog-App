@@ -25,8 +25,6 @@ A simple blog application built using Django as part of my backend learning jour
 ## Setup Instructions
 git clone https://github.com/Vishagh1/Blog-App.git
 cd djangoblog
-python -m venv venv
-source venv/bin/activate   //for windows venv/Scripts/activate
 pipenv install
 pipenv shell
 python manage.py migrate
