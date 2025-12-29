@@ -1,0 +1,22 @@
+# Virtual environments
+djangoblogvenv/
+venv/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django stuff
+db.sqlite3
+*.log
+
+# Media/uploads (don't want user uploads in image)
+media/
+
+# PyCharm/IDE files
+.idea/
+
+# Git
+.git
+.gitignore
