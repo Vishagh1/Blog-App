@@ -60,7 +60,7 @@ Thumbs.db
 
 # Static/Media (if collected outside app)
 staticfiles/
-media/
+media/profile_pics
 
 # pytest cache
 .pytest_cache/

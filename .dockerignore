@@ -12,7 +12,8 @@ db.sqlite3
 *.log
 
 # Media/uploads (don't want user uploads in image)
-media/
+media/profile_pics
+
 
 # PyCharm/IDE files
 .idea/
