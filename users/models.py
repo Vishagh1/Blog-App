@@ -5,7 +5,7 @@ from cloudinary.models import CloudinaryField
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = CloudinaryField(
-        default='profile_pics/default_qcy25u'
+        default='default_qcy25u'
     )
 
     def __str__(self):
