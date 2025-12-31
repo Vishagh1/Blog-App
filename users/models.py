@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(
-        default="https://res.cloudinary.com/dpo3bm3rh/image/upload/v1767163848/default_qcy25u.png",
+        default="default_qcy25u.png",
         upload_to="profile_pics"
     )
 
